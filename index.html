@@ -4,7 +4,7 @@
     <title>Katherine Liu portfolio website</title>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="flexContainer">
     <header>
       <img src="images/logo.png" />
       <ul>
@@ -25,10 +25,11 @@
         <button>Download Resume</button>
       </div>
     </section>
+    <!--  My UX Skills section coded using CSS flex -->
     <section class="mySkills flexContainer">
       <h1>My UX Skills</h1>
       <div class="mySkillsList flexContainer">
-        <div class="mySkillsItem">
+        <div class="mySkillsItem flexChild">
           <img src="icon1.png" alt="Icon for Skill 1" />
           <h3>Skill 1</h3>
           <p>
@@ -36,7 +37,7 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="mySkillsItem">
+        <div class="mySkillsItem flexChild">
           <img src="icon2.png" alt="Icon for Skill 2" />
           <h3>Skill 2</h3>
           <p>
@@ -44,7 +45,7 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="mySkillsItem">
+        <div class="mySkillsItem flexChild">
           <img src="icon3.png" alt="Icon for Skill 3" />
           <h3>Skill 3</h3>
           <p>
@@ -54,13 +55,14 @@
         </div>
       </div>
     </section>
+    <!-- My Work Section Constructed using CSS Grid -->
     <section class="myWork flexContainer">
       <h1>My Work</h1>
       <div class="workGrid">
-        <div class="projectIcon">
+        <div class="projectIcon projectIcon1">
           <img src="project1.jpg" alt="Project 1" />
         </div>
-        <div class="projectContent">
+        <div class="projectContent projectContent1">
           <h4>Project Title 1</h4>
           <p>Description of Project 1</p>
           <p>
@@ -88,10 +90,10 @@
           </p>
           <button>View Project</button>
         </div>
-        <div class="projectIcon">
+        <div class="projectIcon projectIcon2">
           <img src="project2.jpg" alt="Project 2" />
         </div>
-        <div class="projectContent">
+        <div class="projectContent projectContent2">
           <h4>Project Title 2</h4>
           <p>Description of Project 2</p>
           <p>
