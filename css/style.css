@@ -1,15 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+.flexContainer {
+  display: flex;
+}
+
+.gridContainer {
+  display: grid;
+}
+
 body {
   position: relative;
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
+  height: auto;
   width: 100vw;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
+
 header {
   background-color: #f1b150;
   padding: 15px;
@@ -17,6 +27,7 @@ header {
   flex-direction: row;
   display: flex;
 }
+
 header ul {
   align-self: flex-end;
   display: flex;
@@ -29,14 +40,38 @@ header ul {
 header li {
   padding: 0px 5px;
 }
-header p {
-}
+
 .heroImg {
   background-color: #ebebeb;
   padding: 100px 25px;
   height: 100%;
   width: 100%;
   margin: 0 auto;
+}
+
+.mySkills {
+  background-color: #ebebeb;
+  padding-top: 1%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+  flex-direction: column;
+}
+
+.mySkillsList {
+  justify-content: space-around;
+}
+
+.mySkills h1 {
+  text-align: center;
+}
+
+.mySkillsItem {
+  width: 25%;
+  outline: 1px solid black;
+  align-content: center;
+  text-align: center;
+  padding: 5%;
 }
 
 .content {
