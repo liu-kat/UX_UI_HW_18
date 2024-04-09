@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
 }
@@ -49,6 +50,7 @@ header li {
   margin: 0 auto;
 }
 
+/* ============================================= MY SKILLS */
 .mySkills {
   background-color: #ebebeb;
   padding-top: 1%;
@@ -74,13 +76,39 @@ header li {
   padding: 5%;
 }
 
-.content {
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #ffffff;
+/* ============================================= MY WORK */
+.myWork {
+  background-color: #ebebeb;
+  outline: 1px solid red;
+  padding-top: 1%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+  flex-direction: column;
+}
+.myWork h1 {
   text-align: center;
 }
+.workGrid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* CHANGE THE 2 BELOW IF YOU ADD MORE PROJECTS */
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 15px;
+}
+.workGrid .projectContent {
+  grid-column-start: 2;
+  outline: 1px solid black;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.myWork .projectIcon {
+  grid-column-start: 1;
+  outline: 1px solid black;
+}
+
+/* ============================================= FOOTERS */
 button {
   padding: 15px;
   background-color: #373738;
